@@ -3,6 +3,8 @@ import NavLinks from "@/app/ui/dashboard/nav-links";
 import { PowerIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
+// export const experimental_ppr = true;
+
 export default function SideNav() {
 	return (
 		<div className="flex flex-col px-3 md:px-2 py-4 h-full">
