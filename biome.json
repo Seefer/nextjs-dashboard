@@ -1,44 +1,52 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
-  "vcs": {
-    "enabled": true,
-    "clientKind": "git",
-    "useIgnoreFile": true
+  "assist": {
+    "actions": {
+      "source": {
+        "useSortedAttributes": "on",
+        "useSortedProperties": "on"
+      }
+    },
+    "enabled": true
   },
   "files": {
     "ignoreUnknown": true
   },
   "formatter": {
-    "enabled": true,
     "indentStyle": "space",
+    "indentWidth": 2,
     "lineEnding": "lf",
-    "indentWidth": 2
-  },
-  "linter": {
-    "enabled": true,
-    "domains": {
-      "next": "recommended",
-      "test": "recommended"
-    },
-    "rules": {
-      "recommended": true
-    }
+    "lineWidth": 100
   },
   "javascript": {
     "formatter": {
-      "enabled": true,
       "quoteStyle": "single",
       "semicolons": "always",
       "trailingCommas": "none"
     }
   },
-  "assist": {
-    "enabled": true,
-    "actions": {
-      "source": {
-        "useSortedProperties": "on",
-        "useSortedAttributes": "on"
-      }
+  "linter": {
+    "domains": {
+      "next": "recommended",
+      "test": "recommended"
+    },
+    "includes": [
+      "**",
+      "!biome.json",
+      "!**/node_modules/**",
+      "!**/dist/**",
+      "!**/build/**",
+      "!**/out/**",
+      "!**/coverage/**",
+      "!**/.next/**",
+      "!**/.git/**"
+    ],
+    "rules": {
+      "recommended": true
     }
+  },
+  "vcs": {
+    "clientKind": "git",
+    "useIgnoreFile": true
   }
 }

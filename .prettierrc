@@ -1,0 +1,9 @@
+{
+  "plugins": ["@prettier/plugin-oxc"],
+  "tabWidth": 2,
+  "singleQuote": true,
+  "useTabs": false,
+  "endOfLine": "lf",
+  "semi": true,
+  "printWidth": 80
+}
