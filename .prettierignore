@@ -1,0 +1,10 @@
+node_modules
+.vscode
+.next
+.swc
+out
+dist
+coverage
+.DS_Store
+.idea
+*.log
