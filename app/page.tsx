@@ -3,6 +3,7 @@ import Link from 'next/link';
 import AcmeLogo from '@/app/ui/acme-logo';
 import styles from '@/app/ui/home.module.css';
 import { lusitana } from './ui/fonts';
+import Image from 'next/image';
 
 export default function Page() {
   return (
@@ -35,6 +36,20 @@ export default function Page() {
         </div>
         <div className="flex justify-center items-center p-6 md:px-28 md:py-12 md:w-3/5">
           {/* Add Hero Images Here */}
+          <Image
+            src="/hero-desktop.png"
+            alt="Screenshot of dashboard project showing desktop version image"
+            width={1000}
+            height={760}
+            className="hidden md:block"
+          />
+          <Image
+            src="/hero-mobile.png"
+            alt="Screenshot of dashboard project showing mobile version image"
+            width={560}
+            height={620}
+            className="md:hidden block"
+          />
         </div>
       </div>
     </main>
