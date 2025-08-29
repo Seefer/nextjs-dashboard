@@ -5,7 +5,8 @@
     "dev": "next dev --turbopack",
     "start": "next start",
     "test": "jest",
-    "lint-check": "prettier . --check .",
+    "test:watch": "jest --watchAll",
+    "lint-check": "oxlint",
     "lint-format": "prettier . --write ."
   },
   "dependencies": {
@@ -14,6 +15,7 @@
     "autoprefixer": "10.4.20",
     "bcrypt": "^5.1.1",
     "clsx": "^2.1.1",
+    "geist": "^1.4.2",
     "next": "latest",
     "next-auth": "5.0.0-beta.25",
     "postcss": "8.5.1",
@@ -34,8 +36,12 @@
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
+    "concurrently": "^9.2.1",
     "jest": "^30.0.5",
     "jest-environment-jsdom": "^30.0.5",
+    "oxc": "^1.0.1",
+    "oxlint": "^1.13.0",
+    "oxlint-tsgolint": "^0.0.4",
     "prettier": "^3.6.2"
   }
 }
