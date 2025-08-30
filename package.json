@@ -43,5 +43,10 @@
     "oxlint": "^1.13.0",
     "oxlint-tsgolint": "^0.0.4",
     "prettier": "^3.6.2"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "bcrypt"
+    ]
   }
 }
